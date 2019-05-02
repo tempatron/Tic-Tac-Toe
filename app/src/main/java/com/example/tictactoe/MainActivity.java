@@ -53,9 +53,7 @@ public class MainActivity extends AppCompatActivity {
             if(gameState[winningPosition[0]] == gameState[winningPosition[1]] &&
             gameState[winningPosition[1]] == gameState[winningPosition[2]] && gameState[winningPosition[0]] != 2){
 
-                Button btn = findViewById(R.id.restart);
 
-                btn.setVisibility(View.VISIBLE);
 
                 gameActive = false;
 
@@ -89,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Button btn = (Button) v;
-                btn.setVisibility(View.INVISIBLE);
 
                 android.support.v7.widget.GridLayout grid = (android.support.v7.widget.GridLayout) findViewById(R.id.gridLayout);
                 for(int i=0; i<grid.getChildCount(); i++) {
